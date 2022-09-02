@@ -77,11 +77,13 @@ WSGI_APPLICATION = "multi_vendore_food.wsgi.application"
 
 DATABASES = {
     "default": {
-        "ENGINE": "django.db.backends.sqlite3",
-        "NAME": BASE_DIR / "db.sqlite3",
-        # 'NAME': config('DB_NAME'),
-        # 'USER': config('DB_USER'),
-        # 'PASSWORD': config('DB_PASSWORD'),
+        "ENGINE": "django.db.backends.postgresql",
+        # "ENGINE": "django.contrib.gis.db.backends.postgis",
+        'HOST': config('HOST'),
+        # "NAME": BASE_DIR / "db.sqlite3",
+        'NAME': config('DB_NAME'),
+        'USER': config('USERNAME'),
+        'PASSWORD': config('DB_PASSWORD'),
         # 'HOST': config('DB_HOST'),
         # 'PORT': '',
     }
