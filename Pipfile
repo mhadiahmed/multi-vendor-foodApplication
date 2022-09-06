@@ -27,6 +27,8 @@ django-debug-toolbar = "*"
 flake8 = "*"
 isort = "*"
 black = "*"
+pytest = "*"
+pytest-django = "*"
 
 [requires]
 python_version = "3.9"
